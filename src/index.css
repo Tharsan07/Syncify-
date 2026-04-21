@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #ecfdf5;
+  --color-primary-100: #d1fae5;
+  --color-primary-500: #10b981;
+  --color-primary-600: #059669;
+  --color-primary-700: #047857;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased text-gray-600 bg-white leading-relaxed;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.7s ease-out forwards;
+}
+
+.animate-fade-in-up-delayed {
+  opacity: 0;
+  animation: fade-in-up 0.7s ease-out 0.2s forwards;
+}
+
+.animate-fade-in-up-more-delayed {
+  opacity: 0;
+  animation: fade-in-up 0.7s ease-out 0.4s forwards;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-slow {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee-slow:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-content {
+  display: flex;
+  white-space: nowrap;
+}
+
+.animate-fade-up {
+  opacity: 0;
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes form-enter {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-form-enter {
+  animation: form-enter 0.5s ease-out 0.1s both;
+}
