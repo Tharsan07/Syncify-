@@ -5,6 +5,7 @@ import SectionWrapper from '../components/SectionWrapper';
 import Button from '../components/Button';
 import FeatureCard from '../components/FeatureCard';
 import StepFlow from '../components/StepFlow';
+import HeroImage from '../assets/Hero_Section.png';
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-white/10 blur-3xl rounded-full"></div>
             <div className="relative bg-white/5 backdrop-blur-sm p-4 rounded-2xl border border-white/10 shadow-2xl">
               <img
-                src="./src/assets/Hero_Section.png"
+                src={HeroImage}
                 alt="Syncify Real-time Integration Hub"
                 className="w-full h-auto rounded-xl shadow-lg transform hover:scale-[1.02] transition-transform duration-500"
               />

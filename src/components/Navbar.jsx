@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Button from './Button';
+import Logo from '../assets/logo.svg';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +33,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2 group">
-              <img src="/src/assets/logo.svg" alt="Syncify Logo" className="h-10 w-auto" />
+              <img src={Logo} alt="Syncify Logo" className="h-10 w-auto" />
             </Link>
           </div>
 

@@ -3,6 +3,9 @@ import SectionWrapper from '../components/SectionWrapper';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import { Briefcase, HeadphonesIcon, Settings, Globe, CheckCircle2 } from 'lucide-react';
+import SalesTeamImg from '../assets/Salesteam.png';
+import ServiceTeamImg from '../assets/Serviceteam.png';
+import OperationsTeamImg from '../assets/OperationAndFullfilment.png';
 
 export default function UseCases() {
   return (
@@ -56,7 +59,7 @@ export default function UseCases() {
             <div className="w-full lg:w-1/2 relative animate-fade-up">
               <div className="absolute -inset-4 bg-green-50 rounded-3xl rotate-2"></div>
               <div className="relative rounded-2xl border border-gray-100 overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-500 p-2 bg-white">
-                <img src="./src/assets/Salesteam.png" alt="Salesforce Sales Interface" className="w-full h-auto rounded-xl" />
+                <img src={SalesTeamImg} alt="Salesforce Sales Interface" className="w-full h-auto rounded-xl" />
               </div>
             </div>
           </div>
@@ -70,7 +73,7 @@ export default function UseCases() {
             <div className="w-full lg:w-1/2 relative animate-fade-up">
               <div className="absolute -inset-4 bg-white rounded-3xl -rotate-2"></div>
               <div className="relative rounded-2xl border border-gray-100 overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-500 p-2 bg-white">
-                <img src="./src/assets/Serviceteam.png" alt="Service Cloud Interface" className="w-full h-auto rounded-xl" />
+                <img src={ServiceTeamImg} alt="Service Cloud Interface" className="w-full h-auto rounded-xl" />
               </div>
             </div>
             <div className="w-full lg:w-1/2 space-y-8 animate-fade-up">
@@ -126,7 +129,7 @@ export default function UseCases() {
             <div className="w-full lg:w-1/2 relative animate-fade-up">
               <div className="absolute -inset-4 bg-green-50 rounded-3xl rotate-2"></div>
               <div className="relative rounded-2xl border border-gray-100 overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-500 p-2 bg-white">
-                <img src="./src/assets/OperationAndFullfilment.png" alt="Operations Dashboard" className="w-full h-auto rounded-xl" />
+                <img src={OperationsTeamImg} alt="Operations Dashboard" className="w-full h-auto rounded-xl" />
               </div>
             </div>
           </div>
