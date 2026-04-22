@@ -7,8 +7,8 @@ export default function HowItWorks() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Standardized Green Hero Section - Split Layout */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 h-[70vh] flex items-center text-white px-6">
-        <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 min-h-[500px] lg:h-[70vh] flex items-center text-white px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
           <div className="lg:col-span-7 space-y-6 animate-fade-in-up">
             <div className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest rounded-full">The Process</div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight break-words">
@@ -52,8 +52,8 @@ export default function HowItWorks() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="w-full lg:w-3/5">
-              <div className="bg-white rounded-[40px] border border-gray-100 overflow-hidden shadow-2xl shadow-gray-200/50">
-                <div className="grid grid-cols-3 bg-gray-50/50 p-8 font-bold text-gray-400 border-b border-gray-100 uppercase tracking-widest text-[10px]">
+              <div className="bg-white rounded-3xl md:rounded-[40px] border border-gray-100 overflow-hidden shadow-2xl shadow-gray-200/50">
+                <div className="grid grid-cols-3 bg-gray-50/50 p-4 md:p-8 font-bold text-gray-400 border-b border-gray-100 uppercase tracking-widest text-[10px]">
                   <div>Shopify</div>
                   <div className="flex justify-center"><ArrowRightLeft size={16} /></div>
                   <div>Salesforce</div>
@@ -66,14 +66,14 @@ export default function HowItWorks() {
                     ['Fulfillment', 'Fulfillment Object'],
                     ['Refund', 'Credit Memo']
                   ].map((row, idx) => (
-                    <div key={idx} className="grid grid-cols-3 p-8 items-center hover:bg-green-50/20 transition-all group">
-                      <div className="font-bold text-gray-900">{row[0]}</div>
+                    <div key={idx} className="grid grid-cols-3 p-4 md:p-8 items-center hover:bg-green-50/20 transition-all group">
+                      <div className="font-bold text-gray-900 text-sm md:text-base">{row[0]}</div>
                       <div className="flex justify-center">
                          <div className="w-8 h-8 rounded-full bg-green-50 flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-all">
                            <ArrowRightLeft size={14} />
                          </div>
                       </div>
-                      <div className="font-bold text-gray-900">{row[1]}</div>
+                      <div className="font-bold text-gray-900 text-sm md:text-base">{row[1]}</div>
                     </div>
                   ))}
                 </div>

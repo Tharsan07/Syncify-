@@ -18,6 +18,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
+    { name: 'Home', path: '/' }, // ✅ Added Home
     { name: 'Features', path: '/features' },
     { name: 'How it Works', path: '/how-it-works' },
     { name: 'Use Cases', path: '/use-cases' },
@@ -44,7 +45,9 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`text-sm font-semibold transition-all duration-300 py-1 ${isActive ? 'text-green-600' : 'text-gray-600 hover:text-green-600'
+                  className={`text-sm font-semibold transition-all duration-300 py-1 ${isActive
+                      ? 'text-green-600'
+                      : 'text-gray-600 hover:text-green-600'
                     }`}
                 >
                   {link.name}
@@ -54,7 +57,10 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Link to="/contact" className="text-sm font-bold text-gray-600 hover:text-green-600 transition-colors">
+            <Link
+              to="/contact"
+              className="text-sm font-bold text-gray-600 hover:text-green-600 transition-colors"
+            >
               Log in
             </Link>
             <Button to="/contact" variant="primary">
@@ -84,7 +90,9 @@ export default function Navbar() {
                   key={link.name}
                   to={link.path}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`block px-3 py-3 text-base font-bold rounded-md transition-colors ${isActive ? 'bg-green-50 text-green-700' : 'text-slate-700 hover:bg-green-50/30 hover:text-green-600'
+                  className={`block px-3 py-3 text-base font-bold rounded-md transition-colors ${isActive
+                      ? 'bg-green-50 text-green-700'
+                      : 'text-slate-700 hover:bg-green-50/30 hover:text-green-600'
                     }`}
                 >
                   {link.name}
@@ -94,16 +102,28 @@ export default function Navbar() {
             <Link
               to="/terms"
               onClick={() => setMobileMenuOpen(false)}
-              className={`block px-3 py-3 text-base font-bold rounded-md transition-colors ${location.pathname === '/terms' ? 'bg-green-50 text-green-700' : 'text-slate-700 hover:bg-green-50/30 hover:text-green-600'
+              className={`block px-3 py-3 text-base font-bold rounded-md transition-colors ${location.pathname === '/terms'
+                  ? 'bg-green-50 text-green-700'
+                  : 'text-slate-700 hover:bg-green-50/30 hover:text-green-600'
                 }`}
             >
               Terms of Service
             </Link>
             <div className="pt-4 flex flex-col gap-3">
-              <Button to="/contact" variant="secondary" onClick={() => setMobileMenuOpen(false)} className="w-full justify-center">
+              <Button
+                to="/contact"
+                variant="secondary"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full justify-center"
+              >
                 Log in
               </Button>
-              <Button to="/contact" variant="primary" onClick={() => setMobileMenuOpen(false)} className="w-full justify-center">
+              <Button
+                to="/contact"
+                variant="primary"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full justify-center"
+              >
                 Book a Demo
               </Button>
             </div>

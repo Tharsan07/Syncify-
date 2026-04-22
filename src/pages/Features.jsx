@@ -25,8 +25,8 @@ export default function Features() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Standardized Green Hero Section - Split Layout */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 h-[70vh] flex items-center text-white px-6">
-        <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 min-h-[500px] lg:h-[70vh] flex items-center text-white px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
           <div className="lg:col-span-7 space-y-6 animate-fade-in-up">
             <div className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest rounded-full">Platform Capabilities</div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight break-words">
@@ -96,7 +96,7 @@ export default function Features() {
 
       {/* The Syncify Advantage - Split Layout */}
       <SectionWrapper className="bg-white py-24">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="w-full lg:w-1/3 space-y-6">
                <div className="inline-block px-4 py-1.5 bg-green-100 text-green-700 text-xs font-bold uppercase tracking-widest rounded-full">Comparison</div>
@@ -106,8 +106,8 @@ export default function Features() {
                </p>
             </div>
             <div className="w-full lg:w-2/3">
-              <div className="overflow-hidden border border-gray-100 rounded-3xl shadow-2xl shadow-gray-200/50">
-                <table className="w-full text-left border-collapse bg-white">
+              <div className="overflow-x-auto border border-gray-100 rounded-3xl shadow-2xl shadow-gray-200/50">
+                <table className="w-full min-w-[600px] text-left border-collapse bg-white">
                   <thead>
                     <tr className="border-b border-gray-100 bg-gray-50/50">
                       <th className="py-6 px-8 font-bold text-gray-900">Capability</th>

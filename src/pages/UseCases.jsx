@@ -11,8 +11,8 @@ export default function UseCases() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Standardized Green Hero Section - Split Layout */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 h-[70vh] flex items-center text-white px-6">
-        <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 min-h-[500px] lg:h-[70vh] flex items-center text-white px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
           <div className="lg:col-span-7 space-y-6 animate-fade-in-up">
             <div className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest rounded-full">Use Cases</div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight break-words">
@@ -57,7 +57,7 @@ export default function UseCases() {
               </div>
             </div>
             <div className="w-full lg:w-1/2 relative animate-fade-up">
-              <div className="absolute -inset-4 bg-green-50 rounded-3xl rotate-2"></div>
+              <div className="absolute -inset-4 bg-green-50 rounded-3xl md:rotate-2"></div>
               <div className="relative rounded-2xl border border-gray-100 overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-500 p-2 bg-white">
                 <img src={SalesTeamImg} alt="Salesforce Sales Interface" className="w-full h-auto rounded-xl" />
               </div>
@@ -71,7 +71,7 @@ export default function UseCases() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col-reverse lg:flex-row items-center gap-20">
             <div className="w-full lg:w-1/2 relative animate-fade-up">
-              <div className="absolute -inset-4 bg-white rounded-3xl -rotate-2"></div>
+              <div className="absolute -inset-4 bg-white rounded-3xl md:-rotate-2"></div>
               <div className="relative rounded-2xl border border-gray-100 overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-500 p-2 bg-white">
                 <img src={ServiceTeamImg} alt="Service Cloud Interface" className="w-full h-auto rounded-xl" />
               </div>
@@ -127,7 +127,7 @@ export default function UseCases() {
               </div>
             </div>
             <div className="w-full lg:w-1/2 relative animate-fade-up">
-              <div className="absolute -inset-4 bg-green-50 rounded-3xl rotate-2"></div>
+              <div className="absolute -inset-4 bg-green-50 rounded-3xl md:rotate-2"></div>
               <div className="relative rounded-2xl border border-gray-100 overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-500 p-2 bg-white">
                 <img src={OperationsTeamImg} alt="Operations Dashboard" className="w-full h-auto rounded-xl" />
               </div>

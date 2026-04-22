@@ -14,8 +14,8 @@ export default function Contact() {
     <div className="min-h-screen bg-gradient-to-b from-green-50/40 to-white">
 
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 h-[70vh] flex items-center text-white px-6">
-        <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 min-h-[500px] lg:h-[70vh] flex items-center text-white px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
           <div className="lg:col-span-7 space-y-6 animate-fade-in-up">
             <div className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest rounded-full">
               Contact Us
@@ -37,8 +37,8 @@ export default function Contact() {
       </section>
 
       {/* ── Contact Body ── */}
-      <section className="py-16 px-6">
-        <div className="max-w-6xl mx-auto">
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
             {/* ── Left: Contact Info ── */}
@@ -80,8 +80,8 @@ export default function Contact() {
             </div>
 
             {/* ── Right: Form ── */}
-            <div className="lg:col-span-7">
-              <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 max-w-md animate-form-enter">
+            <div className="lg:col-span-7 w-full flex justify-center lg:justify-start">
+              <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 md:p-8 w-full max-w-lg animate-form-enter">
                 <div className="mb-5">
                   <h2 className="text-xl font-bold text-gray-900">Send us a message</h2>
                   <p className="text-sm text-gray-500 mt-1">We'll get back to you within one business day.</p>

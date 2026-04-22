@@ -30,8 +30,8 @@ export default function Terms() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Standardized Green Hero Section - Split Layout */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 h-[60vh] flex items-center text-white px-6">
-        <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 min-h-[400px] lg:h-[60vh] flex items-center text-white px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
           <div className="lg:col-span-7 space-y-6 animate-fade-in-up">
             <div className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest rounded-full">Legal</div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight break-words">
@@ -50,8 +50,7 @@ export default function Terms() {
         </div>
       </section>
       <SectionWrapper className="py-16">
-
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
 
           {/* Sticky Sidebar Navigation */}
           <aside className="hidden lg:block lg:col-span-3">

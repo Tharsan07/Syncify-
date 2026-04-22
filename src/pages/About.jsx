@@ -26,8 +26,8 @@ export default function About() {
     <div className="pt-20 min-h-screen bg-gray-50">
       {/* Green Hero Section with Floating Shapes and Marquee */}
       {/* Standardized Green Hero Section - Split Layout */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 h-[70vh] flex items-center text-white px-6">
-        <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 min-h-[500px] lg:h-[75vh] flex items-center text-white px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
           <div className="lg:col-span-7 space-y-6 animate-fade-in-up">
             <div className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest rounded-full">Our Story</div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight break-words">
@@ -51,8 +51,15 @@ export default function About() {
 
       {/* Marquee Effect */}
       <div className="bg-white py-6 border-b border-gray-100">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="animate-marquee-content animate-marquee flex items-center space-x-12 text-sm font-bold uppercase tracking-widest text-slate-300">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
+          <div className="animate-marquee-slow flex items-center space-x-12 text-sm font-bold uppercase tracking-widest text-slate-300">
+            <span>Salesforce</span>
+            <span>Shopify</span>
+            <span>Automation</span>
+            <span>Data</span>
+            <span>Efficiency</span>
+            <span>Innovation</span>
+            {/* Duplicate for seamless loop */}
             <span>Salesforce</span>
             <span>Shopify</span>
             <span>Automation</span>
@@ -137,9 +144,9 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative">
             <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gray-200 hidden md:block"></div>
             
-            <div className="relative pr-0 md:pr-16 mb-8">
+            <div className="relative pr-0 md:pr-16">
               <div className="absolute right-0 top-6 w-4 h-4 bg-green-600 rounded-full translate-x-1/2 hidden md:block border-4 border-white shadow-sm"></div>
-              <div className="bg-white p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 text-right">
+              <div className="bg-white p-6 md:p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 text-left md:text-right">
                 <div className="text-sm font-black text-green-600 uppercase tracking-widest mb-4">2021</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">The Spark</h3>
                 <p className="text-gray-600 leading-relaxed font-medium">
@@ -150,7 +157,7 @@ export default function About() {
 
             <div className="md:mt-32 relative pl-0 md:pl-16">
               <div className="absolute left-0 top-6 w-4 h-4 bg-green-600 rounded-full -translate-x-1/2 hidden md:block border-4 border-white shadow-sm"></div>
-              <div className="bg-white p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500">
+              <div className="bg-white p-6 md:p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500">
                 <div className="text-sm font-black text-green-600 uppercase tracking-widest mb-4">2025</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">The Future</h3>
                 <p className="text-gray-600 leading-relaxed font-medium">

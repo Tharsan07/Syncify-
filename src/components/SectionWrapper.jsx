@@ -23,8 +23,9 @@ export default function SectionWrapper({ children, className = '', id }) {
   }, []);
 
   return (
-    <section id={id} ref={sectionRef} className={`py-20 ${className}`}>
-      <div className={`max-w-6xl mx-auto px-6 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+    <section id={id} ref={sectionRef} className={`py-20 overflow-hidden ${className}`}>
+      {/* Increased to 7xl to provide space for the 3-column row */}
+      <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
         {children}
       </div>
     </section>
