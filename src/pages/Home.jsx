@@ -5,7 +5,7 @@ import SectionWrapper from '../components/SectionWrapper';
 import Button from '../components/Button';
 import FeatureCard from '../components/FeatureCard';
 import StepFlow from '../components/StepFlow';
-import HeroImage from '../assets/Hero_Section.png';
+import HeroImage from '../assets/HomePage_HeroSection.png';
 
 export default function Home() {
   return (
@@ -13,6 +13,8 @@ export default function Home() {
       {/* Standardized Green Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 min-h-[600px] lg:h-[80vh] flex items-center text-white px-4 sm:px-6 lg:px-8 pt-32 pb-20">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+
+          {/* Left Content Column */}
           <div className="lg:col-span-7 space-y-6 animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight break-words">
               Real-Time Shopify to Salesforce Sync Connector
@@ -29,22 +31,33 @@ export default function Home() {
                   Book a Demo
                 </Button>
               </div>
-
               <p className="text-sm text-white-500 font-medium">
                 Trusted by growing e-commerce teams to sync and manage critical data at scale
               </p>
             </div>
           </div>
+
+          {/* Right Content Column - Integrated with Ambient Border */}
           <div className="hidden lg:block lg:col-span-5 relative">
-            <div className="absolute inset-0 bg-white/10 blur-3xl rounded-full"></div>
-            <div className="relative bg-white/5 backdrop-blur-sm p-4 rounded-2xl border border-white/10 shadow-2xl">
+
+            {/* 1. Deep Ambient Glow (Adopts Hero Green) */}
+            <div className="absolute inset-0 bg-green-400/20 blur-[120px] rounded-full transform scale-125"></div>
+
+            {/* 2. Inner Soft Border Light */}
+            <div className="absolute inset-0 bg-white/5 blur-3xl rounded-full scale-90"></div>
+
+            <div className="relative z-10 flex items-center justify-center">
               <img
                 src={HeroImage}
                 alt="Syncify Real-time Integration Hub"
-                className="w-full h-auto rounded-xl shadow-lg transform hover:scale-[1.02] transition-transform duration-500"
+                /* The drop-shadow now uses a slight green tint (rgba 74, 222, 128) 
+                   to act as a "soft border" that adopts the section's theme.
+                */
+                className="max-w-full max-h-[500px] object-contain drop-shadow-[0_20px_50px_rgba(74,222,128,0.3)] transform hover:scale-[1.03] transition-transform duration-700 ease-in-out"
               />
             </div>
           </div>
+
         </div>
       </section>
 
@@ -101,18 +114,38 @@ export default function Home() {
       <SectionWrapper className="bg-white py-24 overflow-hidden">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-16">
+
+            {/* Left Column */}
             <div className="w-full lg:w-3/5 relative">
               <div className="absolute -inset-4 bg-green-50 rounded-3xl -rotate-2"></div>
               <div className="relative bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
                 <StepFlow />
               </div>
             </div>
+
+            {/* Right Column */}
             <div className="w-full lg:w-2/5 space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">See Syncify in Action</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+                See Syncify in Action
+              </h2>
+
               <p className="text-lg text-gray-600 font-medium leading-relaxed">
                 A live look at how your data connects seamlessly between Shopify and Salesforce. Watch your orders transform into rich CRM insights in seconds.
               </p>
-              <div className="space-y-4 pt-4">
+
+              {/* Short, compact video container */}
+              <div className="relative w-full max-w-[380px] aspect-video rounded-lg overflow-hidden shadow-md border border-gray-100 group">
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/hWijX3VUW0E"
+                  title="Syncify Quick Demo"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
+              <div className="space-y-4 pt-2">
                 {[
                   "Visual workflow designer",
                   "Automated conflict resolution",
@@ -125,6 +158,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
+
           </div>
         </div>
       </SectionWrapper>

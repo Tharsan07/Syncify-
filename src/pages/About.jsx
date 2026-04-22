@@ -31,10 +31,10 @@ export default function About() {
           <div className="lg:col-span-7 space-y-6 animate-fade-in-up">
             <div className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest rounded-full">Our Story</div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight break-words">
-              We Don't Just Implement Tech — We Make It Work for You
+              We Don't Just Implement Tech We Make It Work for You
             </h1>
             <p className="text-lg md:text-xl text-green-100/90 max-w-2xl font-medium leading-relaxed">
-              We go beyond implementation — crafting seamless, intelligent solutions that drive efficiency, productivity, and real business results.
+              We go beyond implementation crafting seamless, intelligent solutions that drive efficiency, productivity, and real business results.
             </p>
             <div className="pt-4">
               <Button variant="secondary" className="px-8 py-4 font-bold text-lg">Join Our Team</Button>
@@ -112,7 +112,7 @@ export default function About() {
             <div className="w-full lg:w-1/2 space-y-8">
               <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">Our Mission & Vision</h2>
               <p className="text-lg text-gray-600 leading-relaxed font-medium">
-                We’re not just another tech service provider — we’re your growth partners. Our mission is to help businesses streamline operations, scale efficiently, and unlock the full potential of technology.
+                We’re not just another tech service provider we’re your growth partners. Our mission is to help businesses streamline operations, scale efficiently, and unlock the full potential of technology.
               </p>
               <div className="grid grid-cols-1 gap-4 pt-4">
                 {[
