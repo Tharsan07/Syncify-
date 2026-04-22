@@ -23,7 +23,7 @@ export default function About() {
   ];
 
   return (
-    <div className="pt-20 min-h-screen bg-gray-50">
+    <div className=" min-h-screen bg-gray-50">
       {/* Green Hero Section with Floating Shapes and Marquee */}
       {/* Standardized Green Hero Section - Split Layout */}
       <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 min-h-[500px] lg:h-[75vh] flex items-center text-white px-4 sm:px-6 lg:px-8 py-20">
@@ -135,15 +135,15 @@ export default function About() {
       <SectionWrapper className="bg-gray-50 py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-left max-w-2xl mb-16">
-             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">The Founding Story</h2>
-             <p className="text-lg text-gray-600 font-medium leading-relaxed">
-               A journey driven by the belief that technology should empower, not complicate.
-             </p>
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">The Founding Story</h2>
+            <p className="text-lg text-gray-600 font-medium leading-relaxed">
+              A journey driven by the belief that technology should empower, not complicate.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative">
             <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gray-200 hidden md:block"></div>
-            
+
             <div className="relative pr-0 md:pr-16">
               <div className="absolute right-0 top-6 w-4 h-4 bg-green-600 rounded-full translate-x-1/2 hidden md:block border-4 border-white shadow-sm"></div>
               <div className="bg-white p-6 md:p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 text-left md:text-right">
@@ -180,7 +180,7 @@ export default function About() {
               </p>
             </div>
             <div className="pb-2">
-               <Button variant="outline" className="px-6 py-3">View Open Roles</Button>
+              <Button variant="outline" className="px-6 py-3">View Open Roles</Button>
             </div>
           </div>
 
@@ -235,32 +235,32 @@ export default function About() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             <div className="lg:col-span-4 space-y-6">
-               <div className="inline-block px-4 py-1.5 bg-green-100 text-green-700 text-xs font-bold uppercase tracking-widest rounded-full">Global Reach</div>
-               <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">Visit Our Offices Worldwide</h2>
-               <p className="text-lg text-gray-600 font-medium leading-relaxed">
-                 Scaling businesses globally requires a local touch. Our offices are strategically placed to serve our international client base.
-               </p>
-               <div className="pt-4">
-                 <a href="mailto:sales@laconfianzatech.com" className="inline-flex items-center gap-3 p-4 bg-gray-50 rounded-2xl border border-gray-100 text-green-600 font-bold hover:bg-green-50 transition-colors">
-                   <Mail size={20} /> sales@laconfianzatech.com
-                 </a>
-               </div>
+              <div className="inline-block px-4 py-1.5 bg-green-100 text-green-700 text-xs font-bold uppercase tracking-widest rounded-full">Global Reach</div>
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">Visit Our Offices Worldwide</h2>
+              <p className="text-lg text-gray-600 font-medium leading-relaxed">
+                Scaling businesses globally requires a local touch. Our offices are strategically placed to serve our international client base.
+              </p>
+              <div className="pt-4">
+                <a href="mailto:sales@laconfianzatech.com" className="inline-flex items-center gap-3 p-4 bg-gray-50 rounded-2xl border border-gray-100 text-green-600 font-bold hover:bg-green-50 transition-colors">
+                  <Mail size={20} /> sales@laconfianzatech.com
+                </a>
+              </div>
             </div>
             <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-               {locations.map((loc, idx) => (
-                 <div key={idx} className="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all group">
-                   <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
-                     <div className="w-10 h-10 bg-green-50 text-green-600 rounded-lg flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition-all">
-                       <MapPin size={20} />
-                     </div>
-                     {loc.country}
-                   </h3>
-                   <p className="text-gray-500 mb-6 font-medium leading-relaxed">{loc.address}</p>
-                   <div className="flex items-center gap-2 text-gray-900 font-bold text-sm">
-                     <Phone size={16} className="text-green-600" /> {loc.phone}
-                   </div>
-                 </div>
-               ))}
+              {locations.map((loc, idx) => (
+                <div key={idx} className="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all group">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                    <div className="w-10 h-10 bg-green-50 text-green-600 rounded-lg flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition-all">
+                      <MapPin size={20} />
+                    </div>
+                    {loc.country}
+                  </h3>
+                  <p className="text-gray-500 mb-6 font-medium leading-relaxed">{loc.address}</p>
+                  <div className="flex items-center gap-2 text-gray-900 font-bold text-sm">
+                    <Phone size={16} className="text-green-600" /> {loc.phone}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

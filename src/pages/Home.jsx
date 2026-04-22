@@ -9,9 +9,9 @@ import HeroImage from '../assets/Hero_Section.png';
 
 export default function Home() {
   return (
-    <div className="pt-20">
+    <div className="">
       {/* Standardized Green Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 min-h-[600px] lg:h-[80vh] flex items-center text-white px-4 sm:px-6 lg:px-8 py-20">
+      <section className="relative overflow-hidden bg-gradient-to-r from-green-600 via-green-700 to-green-800 min-h-[600px] lg:h-[80vh] flex items-center text-white px-4 sm:px-6 lg:px-8 pt-32 pb-20">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
           <div className="lg:col-span-7 space-y-6 animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight break-words">
@@ -49,15 +49,11 @@ export default function Home() {
       </section>
 
       {/* Trust Bar / Marquee */}
-      <div className="bg-white py-10 border-b border-gray-100">
+      <div className="bg-white py-4 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-center text-center gap-8">
             <div className="relative overflow-hidden w-full flex justify-center">
               <div className="animate-marquee-slow flex items-center space-x-12 text-sm font-bold uppercase tracking-widest text-slate-300">
-                <span className="px-4">1M+ records synced daily</span>
-                <span className="px-4">99.9% sync reliability</span>
-                <span className="px-4">Go live in minutes</span>
-                {/* Duplicate for seamless loop */}
                 <span className="px-4">1M+ records synced daily</span>
                 <span className="px-4">99.9% sync reliability</span>
                 <span className="px-4">Go live in minutes</span>
